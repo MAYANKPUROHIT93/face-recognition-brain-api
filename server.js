@@ -95,6 +95,8 @@ app.put('/image', (req, res) => {
   .catch(err => res.status(400).json('unable to get entries'))
 })
 
-app.listen(process.env.PORT || 3000, ()=> {
-  console.log('app is running on port ${process.env.PORT}');
+
+app.listen(process.env.PORT, ()=> {
+  console.log('app is running on port');
+  
 })
